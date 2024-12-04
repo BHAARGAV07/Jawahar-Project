@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+body{
+    background-color: black;
+    background-size: cover;
+}     
+        
+.kishore{
+    width:250px;
+    height:350px;
+    position:relative;
+    top:100px;
+    float:left;
+    margin-left: 40px;
+    margin-bottom: 40px;
+    border-radius: 20px;
+}
+.kishore::before{
+    content:'';
+    width:100%;
+    position:absolute;
+    left:0;
+    bottom:0;
+    background-color:rgba(0,0,0,0.5);
+    color:white;
+    font-size:18px;
+    letter-spacing: 1px;
+    text-align: center;
+    text-transform: capitalize ;
+    padding: 10px 0;
+    opacity:0;
+    visibility: hidden;
+    transform: translateY(50px);
+    transition: all 0.4s;
+}
+.kishore:hover::before{
+    transform: translateY(0);
+    opacity: 1;
+    visibility:visible;
+}
+.kishore:nth-child(1)::before{
+    content:'AVENGERS';
+}
+.kishore:nth-child(2)::before{
+    content:'ANT-MAN-WASP';
+}
+.kishore:nth-child(3)::before{
+    content:'CAPTAIN MARVEL';
+}
+.kishore:nth-child(4)::before{
+    content:'AVENGERS ENDGAME';
+}
+.kishore:nth-child(5)::before{
+    content:'IRON MAN 1';
+}
+.kishore:nth-child(6)::before{
+    content:'MARVEL';
+}
+.kishore:nth-child(7)::before{
+    content:'ANT-MAN';
+}
+.kishore:nth-child(8)::before{
+    content:'MARVEL';
+}
+.kishore:nth-child(9)::before{
+    content:'THE NEW AVENGERS';
+}
+.kishore:nth-child(10)::before{
+    content:'AVERNGERS ASSEMBLE';
+}
+.kishore:nth-child(11)::before{
+    content:'AVERNGERS INFINITY WAR';
+}
+.kishore:nth-child(12)::before{
+    content:'AVENGERS ASSEMBLE';
+}
+.kishore:nth-child(13)::before{
+    content:'SPIDER MAN FAR FROM HOME';
+}
+.kishore:nth-child(14)::before{
+    content:'THE AMAZING SIPDER-MAN';
+}
+.kishore:nth-child(15)::before{
+    content:'THOR RAGNAROK';
+}
+.kishore:nth-child(16)::before{
+    content:'THOR THE DARK WORLD';
+}
+.kishore:nth-child(17)::before{
+    content:'ANT-MAN';
+}
+.kishore:nth-child(18)::before{
+    content:'BLACKXWIDOW';
+}
+.kishore:nth-child(19)::before{
+    content:'IRON-MAN 2';
+}
+.kishore:nth-child(20)::before{
+    content:'BLACK PANTHER';
+}
+.kishore:nth-child(21)::before{
+    content:'QUANTUMANIA';
+}
+.kishore:nth-child(22)::before{
+    content:'DOCTOR STRANGE';
+}
+.kishore:nth-child(23)::before{
+    content:'STRANGER THINGS';
+}
+.kishore:nth-child(24)::before{
+    content:'SHANG-CHI';
+}
+.kishore:nth-child(25)::before{
+    content:'HARRY POTTER';
+}
+.kishore:nth-child(26)::before{
+    content:'THE AMAZING SPIDER-MAN';
+}
+.kishore:nth-child(26)::before{
+    content:'SPIDER-MAN INTO SPIDER VERSE';
+}
+.kishore:nth-child(27)::before{
+    content:'SPIDER-MAN HOMEWORDS';
+}
+.kishore:nth-child(28)::before{
+    content:'SPIDER-MAN NO WAY HOME';
+}
+.kishore:nth-child(29)::before{
+    content:'SPIDER-MAN DE REGRESS A CASE';
+}
+.kishore:nth-child(30)::before{
+    content:'THE AMAZING SPIDER-MAN 2';
+}
+.kishore:nth-child(31)::before{
+    content:'IRON-MAN';
+}
+.kishore:nth-child(32)::before{
+    content:'IRON-MAN 3';
+}
+.kishore:nth-child(33)::before{
+    content:'WONDER-WOMAN';
+}
+.kishore:nth-child(34)::before{
+    content:'THE INCREDIBLE HULK';
+}
+.kishore:nth-child(35)::before{
+    content:'DEADPOOL';
+}
+.kishore:nth-child(36)::before{
+    content:'WOLVERINE';
+}
+.kishore:nth-child(37)::before{
+    content:'SHAZAM';
+}
+.kishore:nth-child(38)::before{
+    content:'JUSTICE LEAGUE';
+}
+.kishore:nth-child(39)::before{
+    content:'THE GARDIANS OF THE GALAXY';
+}
+.kishore:nth-child(1){
+    background: url(https://th.bing.com/th/id/OIP.vEkljgJ1qVoCcf2DRqSRnwHaLH?w=182&h=273&c=7&r=0&o=5&dpr=1.3&pid=1.7) no-repeat center center/cover;
+}
+.kishore:nth-child(2){
+    background: url(https://th.bing.com/th/id/OIP.v5i-yoGKywn43NW3cQpqOAHaK9?w=182&h=270&c=7&r=0&o=5&dpr=1.3&pid=1.7) no-repeat center center/cover;
+}
+.kishore:nth-child(3){
+    background: url(https://i.pinimg.com/originals/d9/d7/a4/d9d7a49c44b2a5dde693e12c8ea48142.jpg) no-repeat center center/cover;
+}
+.kishore:nth-child(4){
+    background: url(https://image.tmdb.org/t/p/original/fTFRY6RJTpwkrYybwj4Wdf5nfgn.jpg) no-repeat center center/cover;
+}
+.kishore:nth-child(5){
+    background: url(https://i.pinimg.com/originals/73/23/50/7323502c151d4e6f330f917584757b76.jpg) no-repeat center center/cover;
+}.kishore:nth-child(6){
+    background: url(https://cdn.openart.ai/stable_diffusion/e16cc90d6922864f2534be4711e6c42258f64999_2000x2000.webp) no-repeat center center/cover;
+}
+.kishore:nth-child(7){
+    background: url(https://cdn.collider.com/wp-content/uploads/2015/05/ant-man-poster-1.jpg) no-repeat center center/cover;
+}
+.kishore:nth-child(8){
+    background: url(https://cdn.openart.ai/stable_diffusion/e16cc90d6922864f2534be4711e6c42258f64999_2000x2000.webp) no-repeat center center/cover;
+}
+.kishore:nth-child(9){
+    background: url(https://i.pinimg.com/originals/df/ab/ac/dfabacd37763b6e942261ec7ef0148de.jpg) no-repeat center center/cover;
+}
+.kishore:nth-child(10){
+    background: url(https://th.bing.com/th/id/OIP.lTKvsaaZ0cYvRZLQz3kKBAHaKs?rs=1&pid=ImgDetMain) no-repeat center center/cover;
+}
+.kishore:nth-child(11){
+    background: url(https://th.bing.com/th/id/R.27a1f62f0895aa52617727b7a8381199?rik=knUnfvfEZSKIew&riu=http%3a%2f%2fcomic-cons.xyz%2fwp-content%2fuploads%2fmarvel-cinematic-universe-the-avengers-infinity-war-movie-poster.jpg&ehk=XXfDtc61WptIXpd%2bbgcdlOvMfqIo3r9KRiOeZGhAz1s%3d&risl=&pid=ImgRaw&r=0) no-repeat center center/cover;
+}
+.kishore:nth-child(12){
+    background: url(https://th.bing.com/th/id/R.ae7efcbb4d928fbbfbd62cb0820b03ff?rik=oE7XScr%2bBFBsYg&riu=http%3a%2f%2fwww.shockya.com%2fnews%2fwp-content%2fuploads%2favengers-3-character-movie-posters-01.jpg&ehk=tkcdMkThzYG8ez8UgHTNfFlY%2bgx%2fHXkWtGW1NUpWpIg%3d&risl=&pid=ImgRaw&r=0) no-repeat center center/cover;
+}
+.kishore:nth-child(13){
+    background: url(https://i.pinimg.com/originals/94/b3/cf/94b3cf9cdea2185effa4270f848da5ce.jpg) no-repeat center center/cover;
+}
+.kishore:nth-child(14){
+    background: url(https://images-na.ssl-images-amazon.com/images/S/pv-target-images/e23bb501f688da7a79e86103dd2fa920edbf21c2e048008ae32c8d38e5be95cd._RI_V_TTW_.jpg) no-repeat center center/cover;
+}
+.kishore:nth-child(15){
+    background: url(https://www.shutterstock.com/blog/wp-content/uploads/sites/5/2022/07/Thor_Rag_Poster.jpg?w=720) no-repeat center center/cover;
+}.kishore:nth-child(16){
+    background: url(https://i.pinimg.com/474x/b9/72/e7/b972e7802a5a600b917652b71357a5ad.jpg) no-repeat center center/cover;
+}
+.kishore:nth-child(17){
+    background: url(https://th.bing.com/th/id/R.605351fa9f6ed42e988f985b8cea8d18?rik=M5JkMHGGcMCW3A&riu=http%3a%2f%2fhollywoodinhidef.com%2fwp-content%2fuploads%2fAnt-ManIMAX3Dposter.jpg&ehk=IadQDcWvVbpZdxvLik9H2LKAseehFGT%2fo7yJr8gdu44%3d&risl=&pid=ImgRaw&r=0) no-repeat center center/cover;
+}
+.kishore:nth-child(18){
+    background: url(https://preview.redd.it/qzrztw1zjga71.jpg?auto=webp&s=c269d2a5542b1e1680f3c203731654cb7adf8f30) no-repeat center center/cover;
+}
+.kishore:nth-child(19){
+    background: url(https://th.bing.com/th/id/R.8cbb12a9e66545f4681802e24bcdb209?rik=iR2xDySjEbkUZw&riu=http%3a%2f%2f3.bp.blogspot.com%2f_xFm94K89whc%2fS9EI04p8i9I%2fAAAAAAAAABE%2fzBXOCtWKyR4%2fs1600%2fIron-Man-2-Imax.jpg&ehk=mcbs6ojbh4%2f5FDfr0Etv%2fgPRv86MxR06Mb36UHWsHaE%3d&risl=&pid=ImgRaw&r=0) no-repeat center center/cover;
+}
+.kishore:nth-child(20){
+    background: url(https://i.pinimg.com/originals/92/4f/e2/924fe2fb085349b360d6e46a013ae2b0.jpg) no-repeat center center/cover;
+}
+.kishore:nth-child(21){
+    background: url(https://i2.wp.com/raisingwhasians.com/wp-content/uploads/2023/02/Ant-man-and-the-wasp-quantumania-movie-review-safe-for-kids.jpg) no-repeat center center/cover;
+}
+.kishore:nth-child(22){
+    background: url(https://th.bing.com/th/id/OIP.wB7RaLMvzhLlIcMsSjQ8ZQHaLC?rs=1&pid=ImgDetMain) no-repeat center center/cover;
+}
+.kishore:nth-child(23){
+    background: url(https://i.pinimg.com/736x/95/64/cc/9564cc5d91b06c8705bb95ea22b9e940.jpg) no-repeat center center/cover;
+}
+.kishore:nth-child(24){
+    background: url(https://images.fandango.com/ImageRenderer/0/0/redesign/static/img/default_poster.png/0/images/masterrepository/fandango/222997/shangchi-posterpayoff.jpg) no-repeat center center/cover;
+}
+.kishore:nth-child(25){
+    background: url(https://picfiles.alphacoders.com/391/391727.jpg) no-repeat center center/cover;
+}.kishore:nth-child(26){
+    background: url(https://th.bing.com/th/id/R.82322c815c6ab49813aefa47bd4329ff?rik=BCGZ7qq0Hx4R4Q&riu=http%3a%2f%2fbigfanboy.com%2fwp%2fwp-content%2fuploads%2f2012%2f05%2fThe-Amazing-Spider-Man-Poster-005.jpg&ehk=v1meJGTmMMG1TF15JavFrLSBqNBD2WWVKMonq4tcPqM%3d&risl=&pid=ImgRaw&r=0) no-repeat center center/cover;
+}
+.kishore:nth-child(27){
+    background: url(https://i.pinimg.com/736x/bf/fd/1b/bffd1b3ca76de406fa06e9c20a728fe2.jpg) no-repeat center center/cover;
+}
+.kishore:nth-child(28){
+    background: url(https://i.redd.it/u9w5dysmaie61.jpg) no-repeat center center/cover;
+}
+.kishore:nth-child(29){
+    background: url(https://th.bing.com/th/id/OIP.H-iX6nIdLWKOE3y67AZUrgHaKj?w=1000&h=1426&rs=1&pid=ImgDetMain) no-repeat center center/cover;
+}
+.kishore:nth-child(30){
+    background: url(https://image.tmdb.org/t/p/original/j4vEhYjOG3CEdh5GIycTWk5vz7T.jpg) no-repeat center center/cover;
+}
+.kishore:nth-child(31){
+    background: url(https://i.pinimg.com/originals/4c/bd/eb/4cbdebda6ca9fec0b893eafc0910bd4c.jpg) no-repeat center center/cover;
+}
+.kishore:nth-child(32){
+    background: url(https://th.bing.com/th/id/OIP.7LrbYKTfo_WnwKQdkiX3rgAAAA?rs=1&pid=ImgDetMain) no-repeat center center/cover;
+}
+.kishore:nth-child(33){
+    background: url(https://th.bing.com/th/id/R.8cbb12a9e66545f4681802e24bcdb209?rik=iR2xDySjEbkUZw&riu=http%3a%2f%2f3.bp.blogspot.com%2f_xFm94K89whc%2fS9EI04p8i9I%2fAAAAAAAAABE%2fzBXOCtWKyR4%2fs1600%2fIron-Man-2-Imax.jpg&ehk=mcbs6ojbh4%2f5FDfr0Etv%2fgPRv86MxR06Mb36UHWsHaE%3d&risl=&pid=ImgRaw&r=0) no-repeat center center/cover;
+}
+.kishore:nth-child(34){
+    background: url(https://th.bing.com/th/id/OIP.RhoBOki11bjt722ioCGCywHaJ4?rs=1&pid=ImgDetMain) no-repeat center center/cover;
+}
+.kishore:nth-child(35){
+    background: url(https://www.themoviedb.org/t/p/original/nJvb0J281x7oB32L0zVVnsO5VOL.jpg) no-repeat center center/cover;
+}.kishore:nth-child(36){
+    background: url(https://th.bing.com/th/id/R.01393dca5111a885647a775dadd5033f?rik=mLWvcVZ0GzbYvg&riu=http%3a%2f%2fimg10.deviantart.net%2fa661%2fi%2f2015%2f100%2fa%2f8%2fdeadpool__2016____teaser_poster_by_camw1n-d8p13la.png&ehk=sBKtIkqu9323ifVNmg%2fh3nHObD0AMDoa99fQu8l2Tq0%3d&risl=1&pid=ImgRaw&r=0) no-repeat center center/cover;
+}
+.kishore:nth-child(37){
+    background: url(https://th.bing.com/th/id/R.2c4dee6a771eb3e6318e7d426c3543a8?rik=C2eYHZRjzhVkpQ&riu=http%3a%2f%2fmedia.comicbook.com%2fwp-content%2fuploads%2f2013%2f06%2fWolverine_Inmortal_New_Poster_latino_e_Cine_1.jpg&ehk=nDca1CTT814V79rf6gG338j9q0zd17E8v%2bDLazSeCQw%3d&risl=&pid=ImgRaw&r=0) no-repeat center center/cover;
+}
+.kishore:nth-child(38){
+    background: url(https://www.themoviedb.org/t/p/original/xf22a5bMysUFJq9t0RQl8vZXhFl.jpg) no-repeat center center/cover;
+}
+.kishore:nth-child(39){
+    background: url(https://th.bing.com/th/id/R.f9e18b2d47d5243f7eede321cc0b40b4?rik=V8ZZMHwgeZsCvQ&riu=http%3a%2f%2fimages6.fanpop.com%2fimage%2fphotos%2f43100000%2fJustice-League-2017-Poster-justice-league-movie-43105388-1900-2850.jpg&ehk=t4OuwqFAN341v7CRSn9QjXw7WC0VKlnVZLftiT6Nal0%3d&risl=&pid=ImgRaw&r=0) no-repeat center center/cover;
+}
+.kishore:nth-child(40){
+    background: url(https://th.bing.com/th/id/R.c6c6a2646f8f1cceaf8557e1a59be212?rik=hr9IvpLA%2f8e0vQ&riu=http%3a%2f%2fwww.blackfilm.com%2fread%2fwp-content%2fuploads%2f2017%2f03%2fGuardians-of-the-Galaxy-Vol.-2-Poster.jpg&ehk=1VF99R5ZzvDPNR5taceuhzGJyNRhF1fnd4POoXy988E%3d&risl=1&pid=ImgRaw&r=0) no-repeat center center/cover;
+}
+    </style>
+</head>
+<body>
+    <div class="jawahar">
+        <div class="kishore"></div>
+        <div class="kishore"></div>
+        <div class="kishore"></div>
+        <div class="kishore"></div>
+        <div class="kishore"></div>
+        <div class="kishore"></div>
+        <div class="kishore"></div>
+        <div class="kishore"></div>
+        <div class="kishore"></div>
+        <div class="kishore"></div>
+        <div class="kishore"></div>
+        <div class="kishore"></div>
+        <div class="kishore"></div>
+        <div class="kishore"></div>
+        <div class="kishore"></div>
+        <div class="kishore"></div>
+        <div class="kishore"></div>
+        <div class="kishore"></div>
+        <div class="kishore"></div>
+        <div class="kishore"></div>
+        <div class="kishore"></div>
+        <div class="kishore"></div>
+        <div class="kishore"></div>
+        <div class="kishore"></div>
+        <div class="kishore"></div>
+        <div class="kishore"></div>
+        <div class="kishore"></div>
+        <div class="kishore"></div>
+        <div class="kishore"></div>
+        <div class="kishore"></div> 
+        <div class="kishore"></div>
+        <div class="kishore"></div>
+        <div class="kishore"></div>
+        <div class="kishore"></div>
+        <div class="kishore"></div>
+        <div class="kishore"></div>
+        <div class="kishore"></div>
+        <div class="kishore"></div>
+        <div class="kishore"></div>
+        <div class="kishore"></div>
+        <div class="kishore"></div>
+        <div class="kishore"></div>
+        <div class="kishore"></div>
+        <div class="kishore"></div>
+        <div class="kishore"></div>
+    </div>
+</body>
+</html>

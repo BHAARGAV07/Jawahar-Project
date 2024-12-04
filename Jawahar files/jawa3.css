@@ -1,0 +1,883 @@
+*{
+    margin:0%;
+    padding: 0%;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+.container{
+    width: 100%;
+    min-height:100vh;
+    display:flex;
+    justify-content: flex-start;
+}
+.container .left{
+    width:15%;
+    height: 100% ;
+    background-color:#111;
+    display:flex;
+    flex-direction: column;
+    align-self: flex-start;
+    padding:20px 0;
+    border-right: 1px solid #222;
+    position:fixed;
+
+}
+.container .left p{
+    font-size: 18px;
+    color:gray;
+    text-transform: capitalize;
+    margin-bottom: 15px;
+    padding: 0 20px;
+}
+.container .left .logo{
+    width: 100px;
+    height: 100px;
+    background-image: url(logo4.png);
+    border-radius: 50%;
+
+}
+.container .left .flow{
+    width:100%;
+    display:flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 30px;
+    padding: 15px 20px;
+    margin: 1px 0;
+    cursor: pointer;
+    transition: all 0.3s;
+    color:white;
+}
+.container .left .flow :nth-child(5){
+    margin-bottom: 30px ;
+}
+.container .left .flow:hover{
+    background-color: black;
+}.container .left .home h2{
+    color: rgb(3, 173, 240);
+    font-weight: lighter;
+}
+.container .left .home span{
+    color: rgb(3, 173, 240);
+}
+.contanier .left .home{
+    background-color: black;
+}
+.container .flow span{
+    font-size: 25px;
+    color: white;
+}
+.container .flow h2{
+    text-transform: capitalize;
+    color: white;
+    font-size: 18px;
+    font-weight: 500px;
+    letter-spacing: 1px;
+    text-align: left;
+}
+.container .right{
+    width: 85%;
+    position:absolute;
+    right: 0;
+    background-color: #111;
+}
+.right .heading{
+    display: flex;
+    color: white;
+}
+.right .heading .head-content{
+    width: 50%;
+    padding: 20px;
+    background-color: black;
+}
+.right .heading .head-content h2{
+    font-size: 24px;
+    text-transform: capitalize;
+}
+.head-content .rating{
+    display: flex;
+    margin: 30px;
+}
+.head-content .btn{
+    display: inline-block;
+    width: 80px;
+    height: 30px;
+    border: 1px solid white;
+    font-size: 14px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    margin-left: 5px;
+    border-radius: 50px;
+}
+.head-content .btn .material-icons{
+    font-size: 20px;
+}
+.head-content .btn .star{
+    color: rgb(255, 204, 0);
+}
+.head-content p{
+    font-size: 16px;
+    letter-spacing: 1px;
+    margin-bottom: 30px;
+}
+.head-content .btn-main{
+    border-radius: 5px;
+    color: white;
+    text-decoration: none;
+    width: 120px;
+    font-size: 16px;
+    letter-spacing: 1px;
+    font-weight: 500;
+    background-color: rgb(3, 173, 240);
+    border:  rgb(3, 173, 240);
+    text-transform: capitalize;
+}
+.right .heading .img-container{
+    width: 50%;
+    height: 350px;
+    background: url(https://images8.alphacoders.com/136/1368197.jpeg) no-repeat center center/cover;
+}
+.right .heading .img-container img{
+    width:100%;
+    height: 100%;
+}
+.trending{
+    margin-top: 40px;
+    padding-left: 20px;
+}
+h1{
+    color:white;
+    font-size: 50px;
+    letter-spacing: 1px;
+    font-weight: 500;
+}
+h1 span{
+    font-size: 16px;
+    color: rgb(3, 173, 240);
+    font-weight: lighter;
+    margin-left: 20px;
+}
+.trending .movie-container{
+    display:flex;
+    justify-self: center;
+    align-items: center;
+    gap:8px;
+    margin-top: 20px;
+}
+  
+.list{
+    width:250px;
+    height:300px;
+    position:relative;
+    /*float:left;
+    margin:3px;*/
+}
+.list::before{
+    content:'';
+    width:100%;
+    position:absolute;
+    left:0;
+    bottom:0;
+    background-color:rgba(0,0,0,0.5);
+    color:white;
+    font-size:18px;
+    letter-spacing: 1px;
+    text-align: center;
+    text-transform: capitalize ;
+    padding: 10px 0;
+    opacity:0;
+    visibility: hidden;
+    transform: translateY(50px);
+    transition: all 0.4s;
+}
+.list:hover::before{
+    transform: translateY(0);
+    opacity: 1;
+    visibility:visible;
+}
+.list:nth-child(1)::before{
+    content:'IRON MAN';
+}
+.list:nth-child(2)::before{
+    content:'THOR RAGNOROK';
+}
+.list:nth-child(3)::before{
+    content:'AMAZING SPIDER-MAN';
+}
+.list:nth-child(4)::before{
+    content:'DECTOR-STRANGE';
+}
+.list:nth-child(5)::before{
+    content:'CAPTAIN AMERICA';
+}
+.list:nth-child(1){
+    background: url(https://m.media-amazon.com/images/I/81JaeDQa6rS.jpg) no-repeat center center/cover;
+}
+.list:nth-child(2){
+    background: url(https://th.bing.com/th/id/OIP.YNkBGs3Yc4whDu-ikhZkXAAAAA?w=426&h=600&rs=1&pid=ImgDetMain) no-repeat center center/cover;
+}
+.list:nth-child(3){
+    background: url(https://th.bing.com/th/id/OIP.WnAMMuI8YKDz5UxkdoM05QAAAA?rs=1&pid=ImgDetMain) no-repeat center center/cover;
+}
+.list:nth-child(4){
+    background: url(https://i.pinimg.com/originals/d5/c7/fb/d5c7fbc1b81c88b370ad3c5b6f4bcb3f.jpg) no-repeat center center/cover;
+}
+.list:nth-child(5){
+    background: url(https://th.bing.com/th/id/OIP.Tn_hQwIbjWpRPlz7lijolQHaLH?rs=1&pid=ImgDetMain) no-repeat center center/cover;
+}
+.tv.list::before{
+    content:'';
+    width:100%;
+    position:absolute;
+    left:0;
+    bottom:0;
+    background-color:rgba(0,0,0,0.5);
+    color:white;
+    font-size:18px;
+    letter-spacing: 1px;
+    text-align: 10px 0;
+    text-transform: capitalize ;
+    padding: 10px 0;
+    opacity:0;
+    visibility: hidden;
+    transform: translateY(50px);
+    transition: all 0.4s;
+}
+.tv.list:hover::before{
+    transform: translateY(0);
+    opacity: 1;
+    visibility:visible;
+}
+.tv .list:nth-child(1)::before{
+    content:'super natural';
+}
+.tv .list:nth-child(2)::before{
+    content:'money hist';
+}
+.tv .list:nth-child(3)::before{
+    content:'strange things';
+}
+.tv .list:nth-child(4)::before{
+    content:'the flash';
+}
+.tv .list:nth-child(5)::before{
+    content:'captain america';
+}
+.tv .list:nth-child(1){
+    background: url(https://th.bing.com/th/id/R.b426fb343f4092d83a2998bf91312f9b?rik=Y7Ei73E%2bYBTagA&riu=http%3a%2f%2fwww.tvposter.net%2fposters%2fsupernatural_2005_4288_poster.jpg&ehk=kToZHzjzYQfv2S77T99nQSRRFWxBx476kEay%2b3Ed3XQ%3d&risl=&pid=ImgRaw&r=0) no-repeat center center/cover;
+}
+.tv .list:nth-child(2){
+    background: url(https://static1.showtimes.com/poster/660x980/money-heist-netflix-144238.jpg) no-repeat center center/cover;
+}
+.tv .list:nth-child(3){
+    background: url(https://m.media-amazon.com/images/I/81870wa24RL.jpg) no-repeat center center/cover;
+}
+.tv .list:nth-child(4){
+    background: url(https://cdn-2.cinemaparadiso.co.uk/16071210504610_l.jpg) no-repeat center center/cover;
+}
+.jawahar{
+    width:100%;
+    height:100vh;
+    text-align: center;
+    overflow: hidden;
+    position: static;
+    position:absolute;
+    top:1300px;
+    position: static;
+    position:absolute;
+    left:10px;
+    /*position: fixed;*/
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.jawahar h1{
+    position:relative;
+    top:-350px;
+}
+.kishore{
+    --w:220px;
+    --h:280px;
+    --translateZ:calc((var(--w) + var(--h)) + 0px);
+    --rotateX:-15deg;
+    --perspective:1800px ;
+    position:absolute;
+    width: var(--w);
+    height: var(--h);
+    top:20%;
+    left:calc(50% -(var(--w) / 2) - 2.5px);
+    z-index:3;
+    transform-style: preserve-3d;
+    transform: perspective(var(--perspective)) ; 
+    animation: run 30s linear infinite;
+}
+@keyframes run {
+    from{
+        transform:perspective(var(--perspective)) rotateX(-13deg) rotateY(0);
+    }to{
+        transform: perspective(var(--perspective)) rotateX(-13deg) rotateY(1turn);
+    }
+}
+.item{
+    position: absolute;
+    border: 2px;
+    border-radius: 15px;
+    overflow: hidden;
+    transform: rotateY(calc((360deg / var(--quantity))*var(--position)))
+                    translateZ(var(--translateZ));
+}
+.jawahar .kishore .item img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+body{
+    background-color:black;
+    background-size: cover;
+}
+.card1 {
+    width: 350px;
+    height: 220px;
+    background: #07182E;
+    position: relative;
+    top:980px;
+    left:40px;
+    display: flex;
+    place-content: center;
+    align-items: center;
+    overflow: hidden;
+    border-radius: 20px;
+    cursor: pointer;
+  }
+  
+  .card1 h2 {
+    /*position: absolute;
+    top:300px;*/
+    z-index: 1;
+    color: white;
+    font-size: 2em;
+  }
+  
+  .card1::before {
+    content: '';
+    position: absolute;
+    width: 100px;
+    background-image: linear-gradient(180deg, rgb(0, 183, 255), rgb(255, 48, 255));
+    height: 230%;
+    animation: mithul 4s linear infinite;
+    transition: all 0.20s;
+  }
+  
+  @keyframes mithul {
+    from {
+      transform: rotate(0deg);
+    }
+  
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  
+  .card1::after {
+    content: '';
+    position: absolute;
+    background: #07182E;
+    inset: 5px;
+    border-radius: 15px;
+  }
+  .card2 {
+    width: 350px;
+    height: 220px;
+    background: #07182E;
+    position: relative;
+    top:760px;
+    left:470px;
+    display: flex;
+    place-content: center;
+    align-items: center;
+    overflow: hidden;
+    border-radius: 20px;
+    cursor: pointer;
+  }
+  
+  .card2 h2 {
+    /*position: absolute;
+    top:300px;*/
+    z-index: 1;
+    color: white;
+    font-size: 2em;
+  }
+  
+  .card2::before {
+    content: '';
+    position: absolute;
+    width: 100px;
+    background-image: linear-gradient(180deg, rgb(0, 183, 255), rgb(255, 48, 255));
+    height: 230%;
+    animation: mithul 4s linear infinite;
+    transition: all 0.20s;
+  }
+  
+  @keyframes mithul {
+    from {
+      transform: rotate(0deg);
+    }
+  
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  
+  .card2::after {
+    content: '';
+    position: absolute;
+    background: #07182E;
+    inset: 5px;
+    border-radius: 15px;
+  }
+  .card3 {
+    width: 350px;
+    height: 220px;
+    background: #07182E;
+    position: relative;
+    top:540px;
+    left:900px;
+    display: flex;
+    place-content: center;
+    align-items: center;
+    overflow: hidden;
+    border-radius: 20px;
+    cursor: pointer;
+  }
+  
+  .card3 h2 {
+    /*position: absolute;
+    top:300px;*/
+    z-index: 1;
+    color: white;
+    font-size: 2em;
+  }
+  
+  .card3::before {
+    content: '';
+    position: absolute;
+    width: 100px;
+    background-image: linear-gradient(180deg, rgb(0, 183, 255), rgb(255, 48, 255));
+    height: 230%;
+    animation: mithul 4s linear infinite;
+    transition: all 0.20s;
+  }
+  
+  @keyframes mithul {
+    from {
+      transform: rotate(0deg);
+    }
+  
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  
+  .card3::after {
+    content: '';
+    position: absolute;
+    background: #07182E;
+    inset: 5px;
+    border-radius: 15px;
+  }
+  .card4 {
+    width: 350px;
+    height: 220px;
+    background: #07182E;
+    position: relative;
+    top:570px;
+    left:40px;
+    display: flex;
+    place-content: center;
+    align-items: center;
+    overflow: hidden;
+    border-radius: 20px;
+    cursor: pointer;
+  }
+  
+  .card4 h2 {
+    /*position: absolute;
+    top:300px;*/
+    z-index: 1;
+    color: white;
+    font-size: 2em;
+  }
+  
+  .card4::before {
+    content: '';
+    position: absolute;
+    width: 100px;
+    background-image: linear-gradient(180deg, rgb(0, 183, 255), rgb(255, 48, 255));
+    height: 230%;
+    animation: mithul 4s linear infinite;
+    transition: all 0.20s;
+  }
+  
+  @keyframes mithul {
+    from {
+      transform: rotate(0deg);
+    }
+  
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  
+  .card4::after {
+    content: '';
+    position: absolute;
+    background: #07182E;
+    inset: 5px;
+    border-radius: 15px;
+  }
+  .card5 {
+    width: 350px;
+    height: 220px;
+    background: #07182E;
+    position: relative;
+    top:360px;
+    left:470px;
+    display: flex;
+    place-content: center;
+    align-items: center;
+    overflow: hidden;
+    border-radius: 20px;
+    cursor: pointer;
+  }
+  
+  .card5 h2 {
+    /*position: absolute;
+    top:300px;*/
+    z-index: 1;
+    color: white;
+    font-size: 2em;
+  }
+  
+  .card5::before {
+    content: '';
+    position: absolute;
+    width: 100px;
+    background-image: linear-gradient(180deg, rgb(0, 183, 255), rgb(255, 48, 255));
+    height: 230%;
+    animation: mithul 4s linear infinite;
+    transition: all 0.20s;
+  }
+  
+  @keyframes mithul {
+    from {
+      transform: rotate(0deg);
+    }
+  
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  
+  .card5::after {
+    content: '';
+    position: absolute;
+    background: #07182E;
+    inset: 5px;
+    border-radius: 15px;
+  }
+  .card6 {
+    width: 350px;
+    height: 220px;
+    background: #07182E;
+    position: relative;
+    top:140px;
+    left:900px;
+    display: flex;
+    place-content: center;
+    align-items: center;
+    overflow: hidden;
+    border-radius: 20px;
+    cursor: pointer;
+  }
+  
+  .card6 h2 {
+    /*position: absolute;
+    top:300px;*/
+    z-index: 1;
+    color: white;
+    font-size: 2em;
+  }
+  
+  .card6::before {
+    content: '';
+    position: absolute;
+    width: 100px;
+    background-image: linear-gradient( rgb(0, 183, 255), rgb(255, 48, 255));
+    height: 230%;
+    animation: mithul 4s linear infinite;
+    transition: all 0.20s;
+  }
+  
+  @keyframes mithul {
+    from {
+      transform: rotate(0deg);
+    }
+  
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  
+  .card6::after {
+    content: '';
+    position: absolute;
+    background: #07182E;
+    inset: 5px;
+    border-radius: 15px;
+  }
+  .jeshua h1{
+    position:absolute;
+    top:2070px;
+    left:300px;
+    font-size: 50px;
+  }
+  .dinesh p{
+    position:absolute;
+    top:2700px;
+    left:450px;
+    font-size: 55px;
+    color:white;
+  }
+
+.saishankar {
+    width: 350px;
+    height: 454px;
+    border-radius: 20px;
+    position: absolute;
+    top:2800px;
+    left:50px;
+    padding: 5px;
+    box-shadow: rgba(151, 65, 252, 0.2) 0 15px 30px -5px;
+    background-image: linear-gradient(144deg,#AF40FF, #5B42F3 50%,#00DDEB);
+  }
+  
+  .saishankar_content {
+    background: rgb(5, 6, 45);
+    border-radius: 17px;
+    width: 100%;
+    height: 100%;
+  }
+  .photo1{
+    width:130px;
+    height: 130px;
+    border-radius: 50%;
+    border-width: 17px;
+    border-color: skyblue;
+    position: absolute;
+    top:2810px;
+    left:160px;
+    background-image:url(jeshua.png);
+  }
+  .align p{
+    color:white;
+    font-size: 20px;
+    width: 345px;
+    height: 300px;
+    position:absolute ;
+    top:3050px;
+    left:59px;
+  }
+  .photo1 h4{
+        color: white;
+        position: absolute;
+        top:170px;
+        left: -100px;
+  }
+  .photo1 h3{
+    color:white;
+    position: absolute;
+    top:150px;
+    left:20px;
+    text-align: start;
+    text-decoration: none;
+    text-overflow:ellipsis;
+  }
+  .bhargav {
+    width: 350px;
+    height: 454px;
+    border-radius: 20px;
+    position: absolute;
+    top:2800px;
+    left:480px;
+    padding: 5px;
+    box-shadow: rgba(151, 65, 252, 0.2) 0 15px 30px -5px;
+    background-image: linear-gradient(144deg,#AF40FF, #5B42F3 50%,#00DDEB);
+  }
+  
+  .bhargav_content {
+    background: rgb(5, 6, 45);
+    border-radius: 17px;
+    width: 100%;
+    height: 100%;
+  }
+  .photo2{
+    width:130px;
+    height: 130px;
+    border-radius: 50%;
+    border-width: 17px;
+    border-color: skyblue;
+    position: absolute;
+    top:2820px;
+    left:590px;
+    background-image:url(jr.png);
+  }
+  .photo2 p{
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top:130px;
+    left:25px;
+    align-items: center;
+    justify-content: center;
+  }
+  .align1 p{
+    color:white;
+    font-size: 20px;
+    width: 345px;
+    height: 300px;
+    position:absolute ;
+    top:3050px;
+    left:495px;
+  }
+  .photo2 h4{
+        color: white;
+        position: absolute;
+        top:170px;
+        left: -100px;
+  }
+  .photo2 h3{
+    color:white;
+    position: absolute;
+    top:150px;
+    left:20px;
+    text-align: start;
+    text-decoration: none;
+    text-overflow:ellipsis;
+  }
+  .hariprasanth {
+    width: 350px;
+    height: 454px;
+    border-radius: 20px;
+    position: absolute;
+    top:2800px;
+    left:900px;
+    padding: 5px;
+    box-shadow: rgba(151, 65, 252, 0.2) 0 15px 30px -5px;
+    background-image: linear-gradient(144deg,#AF40FF, #5B42F3 50%,#00DDEB);
+  }
+  
+  .hariprasanth_content {
+    background: rgb(5, 6, 45);
+    border-radius: 17px;
+    width: 100%;
+    height: 100%;
+  }
+  .photo3{
+    width:130px;
+    height: 130px;
+    border-radius: 50%;
+    border-width: 17px;
+    border-color: skyblue;
+    position: absolute;
+    top:2820px;
+    left:1239px;
+    background-image: url(h1.png);
+  }
+  .align3 p{
+    color:white;
+    font-size: 20px;
+    width: 345px;
+    height: 300px;
+    position:absolute ;
+    top:3050px;
+    left:1140px;
+  }
+  .photo3 h4{
+        color: white;
+        position: absolute;
+        top:170px;
+        left: -100px;
+  }
+  .photo3 h3{
+    color:white;
+    position: absolute;
+    top:150px;
+    left:10px;
+    text-align: start;
+    text-decoration: none;
+    text-overflow:ellipsis;
+  }
+  .pranov {
+    width: 350px;
+    height: 454px;
+    border-radius: 20px;
+    position: absolute;
+    top:3300px;
+    left:50px;
+    padding: 5px;
+    box-shadow: rgba(151, 65, 252, 0.2) 0 15px 30px -5px;
+    background-image: linear-gradient(144deg,#AF40FF, #5B42F3 50%,#00DDEB);
+  }
+  
+  .pranov_content {
+    background: rgb(5, 6, 45);
+    border-radius: 17px;
+    width: 100%;
+    height: 100%;
+  }
+  .photo4{
+    width:130px;
+    height: 130px;
+    border-radius: 50%;
+    border-width: 17px;
+    border-color: skyblue;
+    position: absolute;
+    top:3320px;
+    left:385px;
+    background-image: url(mithul.png);
+  }
+  .align4 p{
+    color:white;
+    font-size: 20px;
+    width: 345px;
+    height: 300px;
+    position:absolute ;
+    top:3550px;
+    left:290px;
+  }
+  .photo4 h4{
+        color: white;
+        position: absolute;
+        top:170px;
+        left: -100px;
+  }
+  .photo4 h3{
+    color:white;
+    position: absolute;
+    top:150px;
+    left:10px;
+    text-align: start;
+    text-decoration: none;
+    text-overflow:ellipsis;
+  }
+  .last{
+  width: 100px;
+  height: 500px;
+  position: relative;
+  top:300px;
+
+  }
